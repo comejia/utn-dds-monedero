@@ -35,7 +35,7 @@ Tenés seis tareas:
 * Long Method: poner() y sacar() se puede descomponer en partes
 * Long Parameter List: agregarMovimiento() deberia recibir un Movimiento y no todos los parametros para construir un Movimiento
 * Feature Envy: getMontoExtraidoA() pregunta demasiado a un Movimiento para filtrar los movimiento de extraccion
-* El _limite_ maximo de una Cuenta esta harcodeado (1000), cualquier cambio el test pierde sentido
+* El _limite diario_ y la cantidad de _depositos maximos_ estan harcodeados (1000 y 3), es conveniente tenerlos como atributos
   
 
 

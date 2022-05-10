@@ -78,4 +78,7 @@ public class Cuenta {
     this.saldo = saldo;
   }
 
+  public int cantidadDeMovimientos() {
+    return movimientos.size();
+  }
 }

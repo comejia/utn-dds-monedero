@@ -28,7 +28,14 @@ Tenés seis tareas:
     *  [Entrada de Blog (en español)](https://www.paradigmadigital.com/dev/nos-espera-junit-5/)
 * Maven 3.3 o superior
  
+---
 
+### Code smells
+* Misplaced methods: el metodo agregateA() es un comportamiento que no le corresponde a Movimiento.
+* Long Method: poner() y sacar() se puede descomponer en partes
+* Long Parameter List: agregarMovimiento() deberia recibir un Movimiento y no todos los parametros para construir un Movimiento
+* Feature Envy: getMontoExtraidoA() pregunta demasiado a un Movimiento para filtrar los movimiento de extraccion
+* El _limite_ maximo de una Cuenta esta harcodeado (1000), cualquier cambio el test pierde sentido
   
 
 

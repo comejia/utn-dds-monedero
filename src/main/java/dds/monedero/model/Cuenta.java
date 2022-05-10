@@ -38,7 +38,7 @@ public class Cuenta {
     }
 
     ponerSaldo(cuanto);
-    agregarMovimiento(LocalDate.now(), cuanto, true);
+    agregarMovimiento(new Movimiento(LocalDate.now(), cuanto, true));
   }
 
   public void sacar(double cuanto) {
@@ -56,11 +56,10 @@ public class Cuenta {
     }
 
     sacarSaldo(cuanto);
-    agregarMovimiento(LocalDate.now(), cuanto, false);
+    agregarMovimiento(new Movimiento(LocalDate.now(), cuanto, false));
   }
 
-  public void agregarMovimiento(LocalDate fecha, double cuanto, boolean esDeposito) {
-    Movimiento movimiento = new Movimiento(fecha, cuanto, esDeposito);
+  public void agregarMovimiento(Movimiento movimiento) {
     movimientos.add(movimiento);
   }
 
